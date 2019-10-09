@@ -1,32 +1,32 @@
-
-@font-face{
-    font-family:"Lakeshore-regular";
+@font-face {
+    font-family: "Lakeshore-regular";
     src: url('./font/Lakeshore-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-html,body{
+html,
+body {
     height: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     font-size: 10px;
     background: rgb(176, 228, 252);
 }
 
-a{
+a {
     /*sytle declaration*/
     text-decoration: none;
 }
 
-.main-header{
+.main-header {
     flex: 0 1 auto;
 }
 
-.logo-text{
+.logo-text {
     background: white;
 
     text-align: center;
@@ -35,19 +35,19 @@ a{
     font-size: 50px;
 }
 
-.main-content{
+.main-content {
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
 }
 
-.thumbnail-item{
-   
+.thumbnail-item {
+
     display: inline-block;
     min-width: 120px;
     max-width: 120px;
-    border: 2px solid rgb(100%, 100%,  100%);
-    border: 2px solid rgba(100%,100%,100%, 0.8);
+    border: 2px solid rgb(100%, 100%, 100%);
+    border: 2px solid rgba(100%, 100%, 100%, 0.8);
     transition: 133ms ease-in-out;
 }
 
@@ -56,7 +56,7 @@ a{
     transition: transform 133ms ease-in;
 }
 
-.thumbnail-list{
+.thumbnail-list {
     flex: 0 1 auto;
     order: 2;
     display: flex;
@@ -67,14 +67,14 @@ a{
     overflow-x: auto;
 }
 
-.thumbnail-image{
-    
+.thumbnail-image {
+
     width: 100%;
     display: block;
-    
+
 }
 
-.thumbnail-title{
+.thumbnail-title {
     display: block;
     margin: 0;
     padding: 4px 10px;
@@ -83,20 +83,20 @@ a{
     font-size: 18px;
 }
 
-.detail-image-container{
+.detail-image-container {
     flex: 1 1 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.detail-image-frame{
+.detail-image-frame {
     position: relative;
     text-align: center;
 
     transition: transform 333ms;
-    cubic-bezier(1,.06,.28,1);
+    cubic-bezier(1, .06, .28, 1);
 }
 
 .is-tiny {
@@ -104,21 +104,21 @@ a{
     transition: transform 0ms;
 }
 
-.detail-image{
+.detail-image {
     width: 90%;
     border: 5px solid rgb(255, 253, 253);
 
-    
-   
+
+
 }
 
-.detail-image-title{
+.detail-image-title {
     position: absolute;
     bottom: -16px;
     left: 4px;
     font-family: 'Lakeshore-regular';
     columns: white;
-    text-shadow: rgba(0,0,0,0.9) 1px 2px 9px;
+    text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
     font-size: 40px;
 }
 
@@ -126,21 +126,21 @@ a{
     display: none;
 }
 
-.hidden-detail .thumbnail-list{
+.hidden-detail .thumbnail-list {
     flex-direction: column;
     align-items: center;
 }
 
-.hidden-detail .thumbnail-item{
+.hidden-detail .thumbnail-item {
     max-width: 80%;
 }
 
 @media all and (min-width:768px) {
 
-    .main-content{
+    .main-content {
         flex-direction: row;
         overflow: hidden;
-      
+
     }
 
     .thumbnail-list {
@@ -150,13 +150,13 @@ a{
         padding: 0 35px;
     }
 
-    .thumbnail-item{
-        
+    .thumbnail-item {
+
         max-width: 260px;
-        
+
     }
 
-    .thumbnail-item + .thumbnail-item {
+    .thumbnail-item+.thumbnail-item {
         margin-top: 20px;
     }
 }
